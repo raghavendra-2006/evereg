@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icons/favicon.ico">
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="header">
+            <img src="logo.png" alt="Company Logo" class="logo">
+            <h1>Annual Tech Summit 2025</h1>
+        </div>
+        
+        <form action="#" method="post">
+
+            <h2 class="form-title">Registration Form</h2>
+            
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+
+            <div class="form-group">
+                <label for="event">Event Selection</label>
+                <select id="event" name="event">
+                    <option value="conference">Annual Conference</option>
+                    <option value="workshop">Interactive Workshop</option>
+                    <option value="webinar">Webinar Series</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="attendees">Number of Attendees</label>
+                <input type="number" id="attendees" name="attendees" min="1" value="1">
+            </div>
+
+            <button type="submit" class="submit-btn">Register Now</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
